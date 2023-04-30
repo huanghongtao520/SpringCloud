@@ -24,8 +24,7 @@ public class UserController {
     }
     @RequestMapping("/query")
     @ResponseBody
-    public String queryAll(){
-        List<User> users=userService.queryAll();
-        return users.toString();
+    public List<User> queryAll(){
+        return userService.queryAll();
     }
 }
