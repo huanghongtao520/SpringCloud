@@ -15,6 +15,7 @@
         <module>springcloud-api</module>
         <module>springcloud-provide</module>
         <module>springcloud-consumer</module>
+        <module>Eureka</module>
     </modules>
 
     <properties>

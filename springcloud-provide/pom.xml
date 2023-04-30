@@ -17,11 +17,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <!--我们需要拿到实体类，要配置APImodule-->
+        <!--我们需要拿到实体类，要配置API module-->
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>springcloud-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--Eureka客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.1.2.RELEASE</version>
+        </dependency>
+        <!--晚上Eureka监控信息-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
