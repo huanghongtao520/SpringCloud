@@ -14,6 +14,7 @@
     <modules>
         <module>springcloud-api</module>
         <module>springcloud-provide</module>
+        <module>springcloud-consumer</module>
     </modules>
 
     <properties>
