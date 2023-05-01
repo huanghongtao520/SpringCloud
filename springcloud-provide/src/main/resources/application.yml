@@ -23,11 +23,11 @@ spring:
     url: jdbc:mysql://localhost:3306/user?serverTimezone=UTC&useSSL=true&useUnicode=true&characterEncoding=utf-8
     type: com.alibaba.druid.pool.DruidDataSource
 
-# Eureka配置,服务配置到哪里
+# Eureka配置,服务注册到哪里
 eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka/
+    service-url: # 将提供者注册到7001和7002，7003三个集群（注册中心）中
+      defaultZone: http://localhost7001:7001/eureka/,http://localhost7002:7002/eureka/,http://localhost7003:7003/eureka/
   instance:
     instance-id: springcloud-provide8001 # 修改在Eureka监控页面上status默认名字
 

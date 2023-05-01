@@ -16,6 +16,8 @@
         <module>springcloud-provide</module>
         <module>springcloud-consumer</module>
         <module>Eureka</module>
+        <module>Eureka7002</module>
+        <module>Eureka7003</module>
     </modules>
 
     <properties>

@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Eureka7002" />
+        <module name="Eureka7003" />
         <module name="springcloud-api" />
         <module name="springcloud-provide" />
         <module name="springcloud-consumer" />
