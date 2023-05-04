@@ -1,0 +1,37 @@
+server:
+  port: 8002
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.huang.pojo
+  #映射路径
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  # mybatis核心配置文件
+  config-location: classpath:mybatis/mybatis-config.xml
+
+#Spring配置
+spring:
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: springcloud-provide
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: huanghongtao520
+    url: jdbc:mysql://localhost:3306/user?serverTimezone=UTC&useSSL=true&useUnicode=true&characterEncoding=utf-8
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# Eureka配置,服务注册到哪里
+eureka:
+  client:
+    service-url: # 将提供者注册到7001和7002，7003三个集群（注册中心）中
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: springcloud-provide8002 # 修改在Eureka监控页面上status默认名字
+
+# info配置（需要导入actuator依赖），告诉别人这个EurekaClient是干什么的，不重要
+info:
+  app.name: 黄宏涛
+  company.name: 许昌市科技公司

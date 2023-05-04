@@ -15,7 +15,7 @@ spring:
     restart:
       enabled: true
   application:
-    name: springcloud-provide
+    name: springcloud-provide # 多个提供者的名字要一样
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
@@ -27,7 +27,7 @@ spring:
 eureka:
   client:
     service-url: # 将提供者注册到7001和7002，7003三个集群（注册中心）中
-      defaultZone: http://localhost7001:7001/eureka/,http://localhost7002:7002/eureka/,http://localhost7003:7003/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: springcloud-provide8001 # 修改在Eureka监控页面上status默认名字
 

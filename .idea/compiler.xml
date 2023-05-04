@@ -8,10 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka7002" />
         <module name="Eureka7003" />
-        <module name="springcloud-api" />
         <module name="springcloud-provide" />
+        <module name="springcloud-config" />
+        <module name="springcloud-zuul" />
+        <module name="springcloud-config-server" />
+        <module name="springcloud-api" />
+        <module name="springcloud-provide-8002" />
         <module name="springcloud-consumer" />
+        <module name="springcloud-consumer-fegin" />
         <module name="Eureka" />
+        <module name="springcloud-provide-Hystrix8004" />
+        <module name="springcloud-comsumer-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,0 +1,30 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: spirng-cloud-zulu
+
+# Eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zulu9527.com
+
+info:
+  app.name: 许昌科技公司
+  company.name: 许昌科技公司
+
+# zulu
+zuul:
+  routes:
+    # http://www.huanghongtao.com:9527/springcloud-provide/query
+    # 隐藏服务名 springcloud-provide ，用mydept替代
+    mydept.serviceId: springcloud-provide
+    # http://www.huanghongtao.com:9527/mydept/query
+    mydept.path: /mydept/**
+
+  # 表示不能用原来的服务名访问，只能用mydept访问 "*"隐藏全部服务名
+  ignored-services: springcloud-provide
+  # prefix: /huang  也可以加一个统一前缀

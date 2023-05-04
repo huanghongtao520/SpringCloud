@@ -18,6 +18,13 @@
         <module>Eureka</module>
         <module>Eureka7002</module>
         <module>Eureka7003</module>
+        <module>springcloud-provide-8002</module>
+        <module>springcloud-consumer-fegin</module>
+        <module>springcloud-provide-Hystrix8004</module>
+        <module>springcloud-comsumer-hystrix-dashboard</module>
+        <module>springcloud-zuul</module>
+        <module>springcloud-config</module>
+        <module>springcloud-config-server</module>
     </modules>
 
     <properties>
