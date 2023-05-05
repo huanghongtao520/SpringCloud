@@ -25,6 +25,9 @@
         <module>springcloud-zuul</module>
         <module>springcloud-config</module>
         <module>springcloud-config-server</module>
+        <module>springcloud-config-client</module>
+        <module>springcloud-config-eureka7001</module>
+        <module>springcloud-config-provide-8001</module>
     </modules>
 
     <properties>

@@ -8,12 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka7002" />
         <module name="Eureka7003" />
+        <module name="springcloud-config-provide-8001" />
         <module name="springcloud-provide" />
-        <module name="springcloud-config" />
         <module name="springcloud-zuul" />
         <module name="springcloud-config-server" />
         <module name="springcloud-api" />
         <module name="springcloud-provide-8002" />
+        <module name="springcloud-config-eureka7001" />
         <module name="springcloud-consumer" />
         <module name="springcloud-consumer-fegin" />
         <module name="Eureka" />
@@ -21,5 +22,10 @@
         <module name="springcloud-comsumer-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-config" target="1.8" />
+      <module name="springcloud-config-client" target="1.8" />
+      <module name="springcloud-config-provide-8001" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

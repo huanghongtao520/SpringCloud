@@ -3,9 +3,9 @@ server:
 spring:
   application:
     name: config-server
-  # 连接远程仓库
+  # 连接远程仓库,访问配置
   cloud:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/huanghongtao520/spring-config.git
